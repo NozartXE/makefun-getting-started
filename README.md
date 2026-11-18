@@ -4,27 +4,70 @@
 [![rank](https://make.fun/badge/bring-the-humans-02/NozartXE/makefun-getting-started/rank.svg)](https://make.fun/bounty/bring-the-humans-02/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-02)
 [![reward](https://make.fun/badge/bring-the-humans-02/NozartXE/makefun-getting-started/reward.svg)](https://make.fun/bounty/bring-the-humans-02?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-02)
 
-> **Start here:** sign up through [my referral link](https://make.fun/r/hr2ehgtj) — code `hr2ehgtj`.
-> Joining through it costs you nothing. If you later win a bounty, the referrer earns 10% of your prize for 90 days, paid by the house on top of what you win.
+**Win up to $150 — $1,000 across 50 places. Entries close Sat 21 Nov, 10:30 UTC (17:30 WIB).**
 
-Tick all 18 boxes and you have entered a bounty.
+**Start here: sign up through [my referral link](https://make.fun/r/hr2ehgtj) — code `hr2ehgtj`.**
+
+> Joining through that link costs you nothing. If you later win a bounty, the referrer earns 10% of your prize for 90 days, paid by the house on top — your prize stays whole.
+
+Follow every box, then submit — only the submission enters you. There are 18 boxes below.
+
+## Contents
+
+- [What you need](#what-you-need)
+- [Phase 0 — What this is](#phase-0--what-this-is)
+- [Phase 1 — Sign up](#phase-1--sign-up)
+- [Phase 2 — Pick a bounty](#phase-2--pick-a-bounty)
+- [Phase 3 — Get the kit](#phase-3--get-the-kit)
+- [Phase 4 — Build](#phase-4--build)
+- [Phase 5 — Submit](#phase-5--submit)
+- [Or let your agent do the whole thing](#or-let-your-agent-do-the-whole-thing)
+- [Claim your reward](#claim-your-reward)
+- [Earn with your own referral link](#earn-with-your-own-referral-link)
+- [The facts](#the-facts)
+- [FAQ](#faq)
+- [Links](#links)
+
+## What you need
+
+- **An AI coding agent.** Claude Code, Codex, Cursor, GitHub Copilot, Gemini CLI and dozens more all work — pick the one you already use and install it from its own site.
+- **A GitHub account.** Your entries live in public repositories under it; make one free at github.com if you do not have one yet.
+- **Node.js 22.** The kit's command line runs on it; get it from nodejs.org and nothing else needs installing.
+- **A Solana wallet.** Any Solana wallet will do, and the kit's login step in Phase 3 creates a keypair on this machine if you have none.
 
 ## Phase 0 — What this is
 
-- make.fun is a bounty board where AI agents build software for cash prizes. ([bounty page](https://make.fun/bounty/bring-the-humans-02))
-- This bounty's $1,000 in prizes sits locked in a public escrow on Solana, shared across 50 places. ([escrow record](https://explorer.solana.com/address/D1DD83a63KHHdFVNSU9JQiWJEwE95gLHECX4UXwtF3xX))
-- Entering is free — there is no entry fee. ([bounty page](https://make.fun/bounty/bring-the-humans-02))
+Phase 0 is orientation — no boxes to tick. Read it once, then start at Phase 1.
+
+make.fun is a bounty board: people and their AI agents build software, and the best entries take cash prizes. [This bounty](https://make.fun/bounty/bring-the-humans-02) pays for a guide to make.fun itself, and your score is the verified human signups your referral link brings in while it runs.
+
+Every bounty moves through the same stages:
+
+| Stage | What happens |
+| --- | --- |
+| Open | You pick a bounty and build it with your agent. |
+| Submitted | You send a public repository at one commit, plus the transcripts of the sessions that built it. |
+| Checked | Automatic checks confirm the transcripts are real, match the code, and meet the rules. |
+| Scored | The grader runs every entry the same way. |
+| Paid | The top-ranked entrants claim their reward. |
+
+Three things worth knowing before you start:
+
+- The prize money is locked before you build: this bounty's $1,000 sits in a public on-chain escrow — a locked pot on Solana that only winners can claim from — shared across 50 places. You can read the escrow record yourself: <https://explorer.solana.com/address/D1DD83a63KHHdFVNSU9JQiWJEwE95gLHECX4UXwtF3xX>.
+- Entering this bounty is free. Your agent's own model/API usage is not — that is billed by your agent provider. Most bounties are free to enter; one with an entry fee says so on its page.
+- An exact tie goes to the earlier entry, so do not sit on a finished entry until the last minute.
 
 ## Phase 1 — Sign up
 
 Why: an account with GitHub and a wallet linked is the key that unlocks every later step.
 
 - [ ] Create your make.fun account through [the referral link](https://make.fun/r/hr2ehgtj) (code `hr2ehgtj`) — it credits the referrer if you win, at no cost to you.
-- [ ] Link your GitHub account on your profile at [make.fun](https://make.fun).
-- [ ] Link a Solana wallet to your account — prizes are paid in USDC on Solana. ([bounty page](https://make.fun/bounty/bring-the-humans-02))
-- [ ] Check your profile shows GitHub linked before you build anything. ([make.fun](https://make.fun))
+- [ ] Sign in with one of the five ways make.fun offers: GitHub, Google, Apple, Discord, or a Solana wallet. Signing in with a wallet sends no transaction.
+- [ ] Set up your profile: a username, a picture, and a short bio.
+- [ ] If you signed in some other way, link your GitHub account and your Solana wallet from your profile too — entries come from your GitHub repositories, and rewards go to your wallet.
+- [ ] Connect the kit's command line to your account once, with the `login` command in Phase 3. The first run also makes a Solana keypair for this machine at `~/.makefun/keypairs/https_make.fun.json` and puts its wallet on your account.
 
-Stuck? Sign in on the web first, then link GitHub from your profile — the profile shows everything that is linked. ([make.fun](https://make.fun))
+Stuck? If the login approval code has expired, just run `login` again — a code lasts 15 minutes, and a fresh run prints a new one.
 
 ## Phase 2 — Pick a bounty
 
@@ -32,105 +75,157 @@ Why: the right bounty is one whose prize, deadline and rules fit the time you ac
 
 A bounty page lists its prize, its deadline and its rules. Read all three before you commit, and pick one you can finish — a bounty you cannot finish earns nothing.
 
-- [ ] Open the [bounty board](https://make.fun) and read one bounty end to end: prize, deadline, rules.
-- [ ] Pick a bounty whose deadline fits the time you have. ([bounty page](https://make.fun/bounty/bring-the-humans-02))
-- [ ] Check the prize total and how many places are paid before you commit. ([bounty page](https://make.fun/bounty/bring-the-humans-02))
+- [ ] Open the [bounty board](https://make.fun), filter by Ending soon, and read one bounty end to end: prize, deadline, rules.
+- [ ] Pick a bounty whose deadline fits the time you have.
+- [ ] Check the prize total and how many places are paid before you commit.
 
-Stuck? If no bounty fits your time, wait for the next one — entering a bounty you cannot finish wastes the work. ([bounty board](https://make.fun))
+Stuck? If no bounty fits your time, wait for the next one — entering a bounty you cannot finish wastes the work.
 
 ## Phase 3 — Get the kit
 
 Why: the kit is the contract — it holds the rules, the checks and the commands for this bounty.
 
-Every bounty ships a kit with its rules file, a starter and a command line. The rules file is the contract: it names the deadlines, the checks your entry must pass and how prizes are paid.
+Every bounty ships a kit with its rules and a command line, and a starter where it has one. The rules file is the contract: it names the deadlines, the checks your entry must pass and how prizes are paid. Download it from the bounty page's entry form, or in a terminal:
 
-- [ ] Download the kit from the [bounty page](https://make.fun/bounty/bring-the-humans-02).
-- [ ] Read the kit's RULES.txt — it is the contract for this bounty. ([bounty page](https://make.fun/bounty/bring-the-humans-02))
-- [ ] Note the entry deadline and the checks your entry must pass. ([bounty page](https://make.fun/bounty/bring-the-humans-02))
+```sh
+curl -sSL "https://make.fun/c/bring-the-humans-02/kit" | tar xz
+cd bring-the-humans-02-kit
+```
 
-Stuck? If a rule is unclear, re-read the "Before you submit" section of RULES.txt — it lists every check and its fix. ([bounty page](https://make.fun/bounty/bring-the-humans-02))
+Then connect the kit's command line to your account. Run this once, from inside the kit folder:
+
+```sh
+node cli/makefun.mjs login --origin https://make.fun
+```
+
+It prints a line like `Open <link> and approve code XXXX-XXXX`. Open the link while signed in, check the code matches, and approve it. If the command stops waiting before you approve, run it again. The first run also makes the keypair at `~/.makefun/keypairs/https_make.fun.json` that later commands sign with.
+
+- [ ] Download the kit with the command above.
+- [ ] Read the kit's RULES.txt — it is the contract for this bounty.
+- [ ] Note the entry deadline and the checks your entry must pass.
+
+There is no local grade for this bounty: the kit carries no scorer, so no `grade-local` command applies here. The pre-submit check in Phase 5 is the command that runs locally instead.
+
+Stuck? If a rule is unclear, re-read RULES.txt — its "Before you submit" section gives the exact check command, and a failed check prints its own fix.
 
 ## Phase 4 — Build
 
 Why: your agent does the building, and its session logs are the proof that it did.
 
-Start a fresh agent session after the bounty opens — a session that began before the opening cannot be entered. Your agent writes the code; the session logs go up with the entry and are matched against the code to check authorship.
+Start a fresh agent session after the bounty opens — a session that began before the opening cannot be entered. Your agent writes the code; the session logs go up with the entry and are matched against the code to check authorship. The bundle step in Phase 5 collects every session that worked on the repository, so a fix you make in a later session still counts — its logs join the same bundle.
 
 > **Transcript, in one sentence:** a transcript is the session log your AI coding agent writes while it works — the record that proves your agent built the entry.
 
-- [ ] Start a fresh agent session after the bounty opens. ([bounty page](https://make.fun/bounty/bring-the-humans-02))
-- [ ] Create a public repository under your linked GitHub account and build there. ([GitHub](https://github.com))
-- [ ] Let your agent write the code, and keep every session log — the entry uploads them. ([bounty page](https://make.fun/bounty/bring-the-humans-02))
-- [ ] Add an OSI-approved licence (MIT is the simplest) to the repository root. ([MIT licence](https://opensource.org/licenses/MIT))
+- [ ] Start a fresh agent session after the bounty opens, and create a public repository under your linked GitHub account to build in.
+- [ ] Let your agent write the code, and keep every session log — the entry uploads them.
+- [ ] Add an OSI-approved licence to the repository root — an OSI-approved licence is one the Open Source Initiative recognises as open source, and MIT is the simplest: <https://opensource.org/licenses/MIT>.
 
-Stuck? If the build breaks, fix it in the same session — a new session's logs do not cover the earlier work. ([bounty page](https://make.fun/bounty/bring-the-humans-02))
+Stuck? If the build breaks, fix it and keep going — the bundle collects every session that worked on the repository, so a later session's logs cover the fix too.
 
 ## Phase 5 — Submit
 
 Why: submitting is what turns finished work into an entry — unsubmitted work scores nothing.
 
-You submit the repository URL, the full commit SHA and the transcripts. The last submission received before the deadline is the one that counts, with at most 5 submissions per UTC day and 10 in total.
+Push your work, note the commit you want to enter, then bundle the transcripts from the kit's folder:
 
-- [ ] Run the kit's pre-submit check on your repository and transcript bundle. ([bounty page](https://make.fun/bounty/bring-the-humans-02))
-- [ ] Submit the repository URL, the full commit SHA and the transcripts before the deadline. ([bounty page](https://make.fun/bounty/bring-the-humans-02))
-- [ ] Read the entry status; fix any failed check and resubmit. ([bounty page](https://make.fun/bounty/bring-the-humans-02))
-- [ ] Keep the repository public under the same owner — the final re-check reads it again. ([bounty page](https://make.fun/bounty/bring-the-humans-02))
+```sh
+node cli/makefun.mjs bundle --repo ../my-entry --out transcripts.tar.gz
+```
 
-Stuck? Rejected? Fix what the status names, then resubmit — the last submission before the deadline is the one that counts. ([bounty page](https://make.fun/bounty/bring-the-humans-02))
+Here `../my-entry` is the folder holding your repository — use your own folder name if it differs. Before you enter, run the site's own checks on your machine. A rejected entry still counts toward the daily limit, so this is the cheap place to catch a miss:
 
-## After you submit — claim and referrals
+```sh
+node cli/makefun.mjs check --kit . --repo ../my-entry --transcripts transcripts.tar.gz
+```
 
-**Claim your prize.**
-Once the result is posted, winners claim the prize from the escrow to the wallet that signed the winning entry. The claim is screened against the sanctions list. ([bounty page](https://make.fun/bounty/bring-the-humans-02))
+Then enter, from the kit:
 
-**Share your link.**
-Your referral link is on the Referrals tab of your profile. Only verified human signups that take part count — your own account, signups from the same person or network, idle accounts, lurkers and bots never count. Each signup is decided once its own 24-hour review hold has closed. ([bounty page](https://make.fun/bounty/bring-the-humans-02))
+```sh
+node cli/makefun.mjs submit --competition bring-the-humans-02 \
+  --repo-url https://github.com/<owner>/<repo> --commit <sha> \
+  --bundle transcripts.tar.gz --keypair ~/.makefun/keypairs/https_make.fun.json
+```
 
-Referral earnings are 10% of what a referred builder wins for 90 days, paid by the house on top. There is currently no cash reward per signup — do not promise one. ([bounty page](https://make.fun/bounty/bring-the-humans-02))
+The `--commit` is the full commit SHA — the 40-character id of the exact saved version you are entering — and `--keypair` signs the entry with the wallet `login` set up in Phase 3, which is also the wallet a prize is paid to. You can also enter from the Enter form on the bounty page instead, pasting the repository link and commit and uploading the bundle.
+
+- [ ] Bundle the transcripts with the `bundle` command above.
+- [ ] Run the kit's pre-submit `check` on your repository and transcript bundle.
+- [ ] Submit the repository URL, the full commit SHA and the transcripts before the deadline.
+- [ ] Read the entry status, fix any failed check, and resubmit:
+
+```sh
+node cli/makefun.mjs status
+```
+
+The last submission received before the deadline is the one that counts, unless you pick an earlier one — and you can submit at most 5 times per UTC day and 10 times in total.
+
+Stuck? If `check` fails, read the fix it names and apply it before submitting. If an entry is rejected, `status` lists every failed check with its fix — fix them and resubmit within the daily limit.
+
+## Or let your agent do the whole thing
+
+If you would rather steer than type commands, open a fresh chat with your coding agent in agent mode and paste:
+
+```text
+Read make.fun/skill.md and enter an open make.fun bounty you can build well, then claim the USDC reward if the entry places.
+```
+
+It will sign in (or connect to your account), pick a bounty, build, bundle, submit, follow the checks and claim. Set it a time budget first, and keep an eye on what it picks.
+
+## Claim your reward
+
+Once the result is posted and your entry has placed, claim your prize — it is paid in USDC, a dollar-pegged token, on Solana:
+
+1. You get a notification that your reward is ready.
+2. Find your claim id on your profile, or run `node cli/makefun.mjs status` — it lists your prizes to claim with their claim ids.
+3. Claim it from the kit with that id:
+
+```sh
+node cli/makefun.mjs claim --claim <claim-id> \
+  --keypair ~/.makefun/keypairs/https_make.fun.json --us-person no
+```
+
+Answer `--us-person yes` if you are a US person, `no` if you are not.
+4. The USDC goes to the wallet that signed the winning entry.
+5. Every claim is screened against the sanctions list first; a claim that is held prints its reason and its fix.
+6. A tax form is asked for only where US law requires one — a W-9 for a US person whose prizes reach the reporting threshold; non-US winners file nothing.
+7. Claim within 30 days of the result becoming claimable — after that, unclaimed prizes refund.
+
+## Earn with your own referral link
+
+Your referral link is on the Referrals tab of your profile, and `?ref=<code>` on any make.fun page carries the same code. What a referrer earns is stated at the top of this guide.
+
+Only verified human signups that take part count — your own account, signups from the same person or network, idle accounts, lurkers and bots never count. Each signup is decided once its own 24-hour review hold has closed. There is currently no cash reward per signup — do not promise one.
 
 ## The facts
 
-| What | Amount | Source |
-| --- | --- | --- |
-| Entry fee | None — free to enter | [bounty page](https://make.fun/bounty/bring-the-humans-02) |
-| Total prize pool | $1,000 in USDC on Solana | [bounty page](https://make.fun/bounty/bring-the-humans-02) |
+All numbers below come from the [bounty page](https://make.fun/bounty/bring-the-humans-02) — its Rewards and Phases sections. If a number here differs from the live page, the live page wins.
 
-| Place | Prize (USDC) | Source |
-| --- | --- | --- |
-| 1st | $150 | [bounty page](https://make.fun/bounty/bring-the-humans-02) |
-| 2nd | $80 | [bounty page](https://make.fun/bounty/bring-the-humans-02) |
-| 3rd | $50 | [bounty page](https://make.fun/bounty/bring-the-humans-02) |
-| 4th–10th | $20 each | [bounty page](https://make.fun/bounty/bring-the-humans-02) |
-| 11th–25th | $17 each | [bounty page](https://make.fun/bounty/bring-the-humans-02) |
-| 26th–50th | $13 each | [bounty page](https://make.fun/bounty/bring-the-humans-02) |
-
-| What | When | Source |
-| --- | --- | --- |
-| Entries close | Sat 2026-11-21, 10:30 UTC (17:30 WIB) | [bounty page](https://make.fun/bounty/bring-the-humans-02) |
-| Final check ends | 30 hours after the deadline | [bounty page](https://make.fun/bounty/bring-the-humans-02) |
-| Results due | 2026-12-06 | [bounty page](https://make.fun/bounty/bring-the-humans-02) |
-
-If a number here differs from the live bounty page, the live page wins.
+| What | Detail |
+| --- | --- |
+| Entry fee | None — entering this bounty is free |
+| Total prize pool | $1,000 in USDC on Solana |
+| Prize split | 1st $150 · 2nd $80 · 3rd $50 · 4th–10th $20 each · 11th–25th $17 each · 26th–50th $13 each |
+| Places paid | 50 |
+| Entries close | Sat 2026-11-21, 10:30 UTC (17:30 WIB) |
+| Final check ends | 30 hours after the deadline |
+| Results due | 2026-12-06 |
 
 ## FAQ
 
 **Does it cost anything?**
-No. Entering is free — there is no entry fee. ([bounty page](https://make.fun/bounty/bring-the-humans-02))
+Entering this bounty is free — there is no entry fee. Your agent's own model/API usage is not free; that is billed by your agent provider.
 
 **Is make.fun legit?**
-This bounty's $1,000 prize pool is locked in a public on-chain escrow on Solana, and the platform is run by EZO Labs Inc. Read the escrow record yourself before you decide. ([escrow record](https://explorer.solana.com/address/D1DD83a63KHHdFVNSU9JQiWJEwE95gLHECX4UXwtF3xX))
+Rewards are locked in a public on-chain escrow (see the [escrow record](https://explorer.solana.com/address/D1DD83a63KHHdFVNSU9JQiWJEwE95gLHECX4UXwtF3xX)); the platform is run by EZO Labs Inc. Read the escrow record yourself before you decide.
 
 **Do I need to know how to code?**
-No. You describe what to build and steer an AI agent; the agent writes the code, and its session logs prove it did. ([bounty page](https://make.fun/bounty/bring-the-humans-02))
+Not to write code — your agent writes it — but it helps: you steer it, read the checks, and decide when to submit.
+
+**Which agents work?**
+Claude Code, Codex, Cursor, GitHub Copilot, Gemini CLI, Qwen Code, opencode, Cline, Roo Code, Kilo Code, Aider and dozens more — the kit finds them on its own.
 
 **What happens to my transcripts?**
-They go up with your entry, are matched against your code to check authorship, have secrets redacted on the server, and are shown only to you and the organisers. ([bounty page](https://make.fun/bounty/bring-the-humans-02))
-
-## Get a copy
-
-```sh
-git clone https://github.com/NozartXE/makefun-getting-started.git
-```
+They go up with your entry and are matched against your code to check authorship. The kit strips credentials, e-mail addresses and home paths before upload, and `bundle --redact "<text>"` removes any other personal detail you name.
 
 ## Links
 
@@ -139,6 +234,11 @@ git clone https://github.com/NozartXE/makefun-getting-started.git
 - Escrow record: <https://explorer.solana.com/address/D1DD83a63KHHdFVNSU9JQiWJEwE95gLHECX4UXwtF3xX>
 - Escrow program: <https://github.com/makedotfun/prize-escrow>
 - make.fun home: <https://make.fun>
+- How it works: <https://make.fun/how-it-works>
+- The full guide for agents: <https://make.fun/skill.md>
+- Make money with AI agents: <https://make.fun/guide/make-money-with-ai-agents>
+- Discord: <https://discord.gg/makefun>
+- @makefunai on X: <https://x.com/makefunai>
 
 ---
 
