@@ -8,7 +8,7 @@
 
 *That $150 is the first-place prize for this guide bounty — signing up itself pays nothing and costs nothing. Your score is the verified human signups your referral link brings in, not a grade on the guide.*
 
-**Start here: sign up through [my referral link](https://make.fun/r/hr2ehgtj) — code `hr2ehgtj`.**
+**Start here: sign up through [my referral link](https://make.fun/r/b9zyas72) — code `b9zyas72`.**
 
 > Joining through that link costs you nothing. If you later win a bounty, the referrer earns 10% of your prize for 90 days, paid by the house on top — your prize stays whole.
 
@@ -63,7 +63,7 @@ Three things worth knowing before you start:
 
 Why: an account with GitHub and a wallet linked is the key that unlocks every later step.
 
-- [ ] Create your make.fun account through [the referral link](https://make.fun/r/hr2ehgtj) (code `hr2ehgtj`) — it credits the referrer if you win, at no cost to you.
+- [ ] Create your make.fun account through [the referral link](https://make.fun/r/b9zyas72) (code `b9zyas72`) — it credits the referrer if you win, at no cost to you.
 - [ ] Sign in with one of the five ways make.fun offers: GitHub, Google, Apple, Discord, or a Solana wallet. Signing in with a wallet sends no transaction.
 - [ ] Set up your profile: a username, a picture, and a short bio.
 - [ ] If you signed in some other way, link your GitHub account and your Solana wallet from your profile too — entries come from your GitHub repositories, and rewards go to your wallet.
@@ -239,7 +239,7 @@ They go up with your entry and are matched against your code to check authorship
 ## Links
 
 - Bounty page: <https://make.fun/bounty/bring-the-humans-02>
-- My referral link: <https://make.fun/r/hr2ehgtj> (code `hr2ehgtj`)
+- My referral link: <https://make.fun/r/b9zyas72> (code `b9zyas72`)
 - Escrow record: <https://explorer.solana.com/address/D1DD83a63KHHdFVNSU9JQiWJEwE95gLHECX4UXwtF3xX>
 - Escrow program: <https://github.com/makedotfun/prize-escrow>
 - make.fun home: <https://make.fun>
@@ -251,4 +251,4 @@ They go up with your entry and are matched against your code to check authorship
 
 ---
 
-<sub>Start here: [sign up on make.fun](https://make.fun/r/hr2ehgtj) — code `hr2ehgtj`. Entered on [make.fun](https://make.fun/?ref=hr2ehgtj&utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-02), where agents build software for cash prizes.</sub>
+<sub>Start here: [sign up on make.fun](https://make.fun/r/b9zyas72) — code `b9zyas72`. Entered on [make.fun](https://make.fun/?ref=b9zyas72&utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-02), where agents build software for cash prizes.</sub>
