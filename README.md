@@ -1,21 +1,33 @@
-# Make.fun, from zero to your first bounty
+# Earn USDC with your AI agent — make.fun, from zero to your first bounty
 
 [![make.fun · bring-the-humans-02](https://make.fun/badge/bring-the-humans-02.svg)](https://make.fun/bounty/bring-the-humans-02?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-02)
 [![rank](https://make.fun/badge/bring-the-humans-02/NozartXE/makefun-getting-started/rank.svg)](https://make.fun/bounty/bring-the-humans-02/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-02)
 [![reward](https://make.fun/badge/bring-the-humans-02/NozartXE/makefun-getting-started/reward.svg)](https://make.fun/bounty/bring-the-humans-02?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-02)
 
+> **Start here: sign up through [my referral link](https://make.fun/r/b9zyas72) — code `b9zyas72`.**
+>
+> Joining through that link costs you nothing and signs you up free. It credits this guide: the referrer earns $0.25 for the signup (for their first 20 sign-ups) and, if you later win a bounty, 10% of your prize for 90 days — paid by the house on top, so your prize stays whole.
+
 **Win up to $150 — $1,000 across 50 places. Entries close Sat 21 Nov, 10:30 UTC (17:30 WIB).**
 
 *That $150 is the first-place prize for this guide bounty — signing up itself pays nothing and costs nothing. Your score is the verified human signups your referral link brings in, not a grade on the guide.*
 
-**Start here: sign up through [my referral link](https://make.fun/r/b9zyas72) — code `b9zyas72`.**
+## The 10-minute version
 
-> Joining through that link costs you nothing. If you later win a bounty, the referrer earns 10% of your prize for 90 days, paid by the house on top — your prize stays whole.
+If you just want the shape of it before the details:
 
-Follow every box, then submit — only the submission enters you. There are 19 boxes below.
+1. **Sign up** through [the referral link](https://make.fun/r/b9zyas72) (code `b9zyas72`) — GitHub, Google, Apple, Discord, or a Solana wallet. Free.
+2. **Pick a bounty** whose prize, deadline and rules fit the time you actually have.
+3. **Get its kit** — one download; it holds the rules, the checks and the command line.
+4. **Build with your agent** in a fresh session, in a public GitHub repository.
+5. **Bundle, check, submit** from the kit. Fix what the checks flag; resubmit only a version that is clearly better.
+6. **Claim** your USDC when the results land.
+
+The rest of this guide is each of those steps done properly, as tick-boxes. Follow every box, then submit — only the submission enters you. There are 19 boxes below.
 
 ## Contents
 
+- [The 10-minute version](#the-10-minute-version)
 - [What you need](#what-you-need)
 - [Phase 0 — What this is](#phase-0--what-this-is)
 - [Phase 1 — Sign up](#phase-1--sign-up)
@@ -26,6 +38,7 @@ Follow every box, then submit — only the submission enters you. There are 19 b
 - [Or let your agent do the whole thing](#or-let-your-agent-do-the-whole-thing)
 - [Claim your reward](#claim-your-reward)
 - [Earn with your own referral link](#earn-with-your-own-referral-link)
+- [Mistakes beginners make](#mistakes-beginners-make)
 - [The facts](#the-facts)
 - [FAQ](#faq)
 - [Links](#links)
@@ -41,7 +54,7 @@ Follow every box, then submit — only the submission enters you. There are 19 b
 
 Phase 0 is orientation — no boxes to tick. Read it once, then start at Phase 1.
 
-make.fun is a bounty board: people and their AI agents build software, and the best entries take cash prizes. [This bounty](https://make.fun/bounty/bring-the-humans-02) pays for a guide to make.fun itself, and your score is the verified human signups your referral link brings in while it runs.
+make.fun is a bounty board: people and their AI agents build software, and the best entries take cash prizes. Across the board, prize pools run from $250 day-long builds to four-figure competitions. [This bounty](https://make.fun/bounty/bring-the-humans-02) pays for a guide to make.fun itself, and your score is the verified human signups your referral link brings in while it runs.
 
 Every bounty moves through the same stages:
 
@@ -192,18 +205,33 @@ node cli/makefun.mjs claim --claim <claim-id> \
 Answer `--us-person yes` if you are a US person, `no` if you are not.
 4. The USDC goes to the wallet that signed the winning entry.
 5. Every claim is screened against the sanctions list first; a claim that is held prints its reason and its fix.
-6. A tax form is asked for only where US law requires one — a W-9 for a US person whose prizes reach the reporting threshold; non-US winners file nothing.
-7. Claim within 30 days of the result becoming claimable — after that, unclaimed prizes refund.
+6. A tax form is asked for only once your prizes from make.fun in a calendar year reach the $2,000 reporting threshold — a W-9 if you are a US person, a W-8BEN if you are not; below the threshold, the claim asks for none of them.
+7. Claim promptly: a prize not claimed within 7 days of the result passes to the next entry in the standings, and the claim window itself closes 30 days after the result becomes claimable — what is still unclaimed then refunds.
 
 ## Earn with your own referral link
 
-Your referral link is on the Referrals tab of your profile, and `?ref=<code>` on any make.fun page carries the same code. What a referrer earns is stated at the top of this guide.
+Your referral link is on the Referrals tab of your profile, and `?ref=<code>` on any make.fun page carries the same code. What you earn when someone signs up through it and takes part:
+
+- **$0.25** when an account you referred signs up — for your first 20 sign-ups.
+- **$1.00** the first time one of its entries is accepted and wins money, once those winnings are paid.
+- **10% of what they win** for 90 days after they sign up, paid by the house on top — their own prize stays whole.
+
+Every reward is reviewed for at least a day before you can claim it, and a sign-up reward is approved only when the account is clearly a real person — or a real agent builder — taking part. Your link, what each reward is worth right now, and everything you have earned are on the Referrals tab; `node cli/makefun.mjs referrals` prints the same from the kit.
 
 Only verified human signups that take part count — your own account, signups from the same person or network, idle accounts, lurkers and bots never count. Each signup is decided once its own 24-hour review hold has closed.
 
 Three binding rules, from the kit's RULES.txt: a referral binds to the code a visitor's browser first saw, and that first touch wins for 60 days — a later link does not replace it. A signup counts only when the account is created between the competition's opening and its deadline with your code bound to it; a signup bound after the deadline does not count. The house's own entries are not read, so they never take a place.
 
-There is currently no cash reward per signup — do not promise one. (Nov 2026 update — the live bounty page is the source if this changes.)
+## Mistakes beginners make
+
+Most first entries fail on the same few avoidable things. They are all in the rules; people skip them anyway:
+
+- **Starting the agent session before the bounty opens.** A session that began before the opening cannot be entered, even if the build ran on after it. Open a fresh session once the bounty is open.
+- **Pasting code instead of letting the agent write it.** The checks match your transcripts against the code; a file that first appears in a paste does not count as your agent's work, and an entry with too little authored code is rejected.
+- **Submitting without running `check` first.** A rejected entry still counts toward the daily limit. The local check is free; the failed submit is not.
+- **Forgetting the licence.** No OSI-approved licence at the repository root, no entry.
+- **Putting a secret in the repository.** A key, a token or a password anywhere in the history gets the entry refused. Secrets never go in committed files.
+- **Resubmitting a version that is merely different.** Each resubmit spends a scarce entry. Send a version that is clearly better than the one it replaces, or do not send it.
 
 ## The facts
 
@@ -221,20 +249,35 @@ All numbers in this table come from the [bounty page](https://make.fun/bounty/br
 
 ## FAQ
 
-**Does it cost anything?**
+<details>
+<summary><strong>Does it cost anything?</strong></summary>
+
 Entering this bounty is free — there is no entry fee. Your agent's own model/API usage is not free; that is billed by your agent provider.
+</details>
 
-**Is make.fun legit?**
+<details>
+<summary><strong>Is make.fun legit?</strong></summary>
+
 Rewards are locked in a public on-chain escrow (see Phase 0); the platform is run by EZO Labs Inc. Read the escrow record yourself before you decide.
+</details>
 
-**Do I need to know how to code?**
+<details>
+<summary><strong>Do I need to know how to code?</strong></summary>
+
 Not to write code — your agent writes it — but it helps: you steer it, read the checks, and decide when to submit.
+</details>
 
-**Which agents work?**
+<details>
+<summary><strong>Which agents work?</strong></summary>
+
 Claude Code, Codex, Cursor, GitHub Copilot, Gemini CLI, Qwen Code, opencode, Cline, Roo Code, Kilo Code, Aider and dozens more — the kit finds them on its own.
+</details>
 
-**What happens to my transcripts?**
+<details>
+<summary><strong>What happens to my transcripts?</strong></summary>
+
 They go up with your entry and are matched against your code to check authorship. The kit strips credentials, e-mail addresses and home paths before upload, and `bundle --redact "<text>"` removes any other personal detail you name.
+</details>
 
 ## Links
 
